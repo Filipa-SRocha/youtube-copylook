@@ -309,10 +309,35 @@ iframe {
 	text-decoration: none;
 	color: white;
 }
-.author-link h3 {
+
+#video-description {
+	width: 400px;
 	display: inline-block;
 }
+#channel {
+	display: inline-block;
+	margin-left: 10px;
+	position: relative;
+	top: -10px;
+}
 
+#video-description p {
+	font-size: 14px;
+	color: #909090;
+	display: inline-block;
+}
+#channel-subscribe {
+	margin-top: 5px;
+	background: #c00;
+	color: white;
+	font-size: 14px;
+	font-weight: 600;
+	width: 120px;
+	height: 40px;
+	float: right;
+	border: none;
+	border-radius: 3px;
+}
 /*---------------- aside video --------------*/
 aside {
 	margin-top: 25px;

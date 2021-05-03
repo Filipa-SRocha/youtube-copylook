@@ -110,6 +110,8 @@ section {
 }
 body {
 	line-height: 1;
+	font-size: 16px;
+	-webkit-font-smoothing: subpixel-antialiased;
 }
 ol,
 ul {
@@ -287,10 +289,10 @@ iframe {
 }
 
 .main-video-icons {
-	margin: 6px;
+	margin: 5px;
 }
 .icons-text {
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	position: relative;
 	top: -5px;

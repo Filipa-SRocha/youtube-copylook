@@ -1,12 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=, initial-scale=1.0" />
+		<title>Looks Like Youtube</title>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+		/>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+	<body>
+		<nav>
+			<section id="general-nav">
+				<span class="material-icons-outlined">menu</span>
+				<a href="index.html"
+					><img id="logo" src="resources/logo.png" alt="Youtube Logo" />
+					<h1>YouTube</h1></a
+				>
+			</section>
+
+			<section id="search">
+				<input type="text" placeholder="search" />
+				<button id="nav-search-button" type="submit">
+					<span class="material-icons">search</span>
+				</button>
+			</section>
+
+			<section id="personal-nav">
+				<span class="personal-nav-item material-icons">video_call</span>
+				<span class="personal-nav-item material-icons-outlined">apps</span>
+				<span class="personal-nav-item material-icons">notifications</span>
+				<span class="personal-nav-item"><div id="user">U</div></span>
+			</section>
+		</nav>
+
+		<main>
+			<div id="video-container">
+				<iframe
+					width="854"
+					height="480"
+					src="https://www.youtube.com/embed/I_8-P4eZ1jA"
+					title="YouTube video player"
+					frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen
+				></iframe>
+			</div>
+
+			<section id="video-title-bar">
+				<div>
+					<section>
+						<a class="tags" href="https://www.youtube.com/hashtag/sammhenshaw"
+							>#Samm Henshaw</a
+						>
+						<a class="tags" href="https://www.youtube.com/hashtag/church"
+							>#Church</a
+						>
+						<a class="tags" href="https://www.youtube.com/hashtag/officialvideo"
+							>#OfficialVideo</a
+						>
+					</section>
+					<h2 class="video-title">
+						Samm Henshaw - Church (Official Video) ft. EARTHGANG
+					</h2>
+				</div>
+				<p class="views">16 085 828 visualizações • 05/02/2019</p>
+
+				<span class="main-video-buttons">
+					<span class="main-video-icons">
+						<span class="material-icons">thumb_up</span>
+						<span class="icons-text">416 MIL</span>
+					</span>
+
+					<span class="main-video-icons">
+						<span class="material-icons">thumb_down</span>
+						<span class="icons-text">4,6 MIL</span>
+					</span>
+					<span class="main-video-icons">
+						<span class="material-icons-outlined">reply</span>
+						<span class="icons-text">PARTILHAR</span>
+					</span>
+					<span class="main-video-icons">
+						<span class="material-icons-outlined">library_add</span>
+						<span class="icons-text">GUARDAR</span>
+					</span>
+					<span class="main-video-icons">
+						<span class="icons-text">...</span>
+					</span>
+				</span>
+			</section>
+			<hr />
+			<section id="video-description">
+				<a
+					class="author-link"
+					href="https://www.youtube.com/channel/UC9PlhjF8doWtKVRc0YoAgiw"
+				>
+					<img
+						class="author-img"
+						src="https://yt3.ggpht.com/ytc/AAUvwnjW7DUDXBarTOnkkSPbmS3E5nkuC5f2n-06q4TVhA=s48-c-k-c0x00ffffff-no-rj-mo"
+					/>
+					<h3>Samm Henshaw</h3>
+				</a>
+				<p>294 mil subscritores</p>
+			</section>
+		</main>
+
+		<aside>
+			<a href="https://www.youtube.com/watch?v=RfgL_OaTomc" class="video-card">
+				<img class="aside-video" src="resources/doubt.webp" />
+				<div class="aside-video-link">
+					<h3 class="aside-video-title">
+						Samm Henshaw - Doubt(Official Video) ft. Wretch 32
+					</h3>
+					<p class="aside-video-channel">Samm Henshaw</p>
+					<p class="aside-video-views">7,6 M de visualizações • há 2 anos</p>
+				</div>
+			</a>
+
+			<a href="https://www.youtube.com/watch?v=2EGXgmoYtgA" class="video-card">
+				<img class="aside-video" src="resources/gilsons.webp" />
+				<div class="aside-video-link">
+					<h3 class="aside-video-title">Gilsons - Love Love (Lyric Video)</h3>
+					<p class="aside-video-channel">Gilsons Oficial</p>
+					<p class="aside-video-views">6,1 M de visualizações • há 2 anos</p>
+				</div>
+			</a>
+
+			<a href="https://www.youtube.com/watch?v=lxRwEPvL-mQ" class="video-card">
+				<img class="aside-video" src="resources/NF.webp" />
+				<div class="aside-video-link">
+					<h3 class="aside-video-title">NF - When I Grow Up</h3>
+					<p class="aside-video-channel">NFrealmusic</p>
+					<p class="aside-video-views">145 M de visualizações • há 1 ano</p>
+				</div>
+			</a>
+
+			<a href="https://www.youtube.com/watch?v=eNh5OraNPUs" class="video-card">
+				<img class="aside-video" src="resources/goodDay.webp" />
+				<div class="aside-video-link">
+					<h3 class="aside-video-title">
+						Surfaces - Good Day (Official Video)
+					</h3>
+					<p class="aside-video-channel">Surfaces</p>
+					<p class="aside-video-views">6,5 M de visualizações • há 1 ano</p>
+				</div>
+			</a>
+
+			<a href="https://www.youtube.com/watch?v=8_NBwub3gxg" class="video-card">
+				<img class="aside-video" src="resources/openRoad.webp" />
+				<div class="aside-video-link">
+					<h3 class="aside-video-title">
+						Hollow Coves - The Open Road (Official Music Video)
+					</h3>
+					<p class="aside-video-channel">hollowcoves</p>
+					<p class="aside-video-views">648 mil visualizações • há 1 mês</p>
+				</div>
+			</a>
+		</aside>
+	</body>
 </html>

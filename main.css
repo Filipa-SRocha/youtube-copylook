@@ -1,3 +1,347 @@
-body{
-    background-color: aqua;
+/* CSS RESET----*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------------------------*/
+
+body {
+	background-color: #181818;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 10fr;
+	grid-template-areas:
+		'nav nav'
+		'main aside';
+}
+
+/*------------nav bar-------------------*/
+nav {
+	padding: 10px;
+	padding-top: 5px;
+	background-color: #202020f8;
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+	grid-area: nav;
+	position: fixed;
+	width: 100%;
+	justify-content: space-between;
+}
+
+#general-nav {
+	width: 200px;
+	height: 40px;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+#general-nav .material-icons-outlined {
+	font-size: 24px;
+	font-weight: 500;
+	color: white;
+	margin: 0 10px;
+}
+#logo {
+	width: 30px;
+	position: relative;
+	top: 4px;
+}
+
+#general-nav h1 {
+	position: relative;
+	bottom: 2px;
+}
+
+#general-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#search {
+	width: 550px;
+}
+#search input {
+	width: 450px;
+	height: 30px;
+	border: 1px solid #303030;
+	background-color: #181818;
+	font-size: 15px;
+	padding-left: 10px;
+	caret-color: white;
+}
+#search input:focus-visible {
+	outline: none;
+}
+#nav-search-button {
+	height: 34px;
+	width: 70px;
+	position: relative;
+	right: 5px;
+	top: 3px;
+	border: none;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: #323232;
+	color: #6f6f6f;
+}
+
+#nav-search-button .material-icons {
+	font-size: 20px;
+}
+
+#personal-nav {
+	width: 220px;
+}
+
+.personal-nav-item {
+	margin: 0 10px;
+	color: white;
+}
+#user {
+	background-color: teal;
+	display: inline-block;
+	border-radius: 50%;
+	position: relative;
+	top: -5px;
+	padding: 8px 10px;
+	font-weight: 700;
+}
+/*--------------------------------------------*/
+
+aside {
+	background-color: #181818;
+	grid-area: aside;
+	height: 700px;
+}
+
+a h1 {
+	display: inline-block;
+}
+
+/*--------------main video-------------------*/
+main {
+	background-color: #181818;
+	grid-area: main;
+	margin: 30px;
+	margin-right: 20px;
+}
+
+iframe {
+	border: 1px solid black;
+	margin-bottom: 20px;
+}
+
+#video-title-bar {
+	height: 80px;
+}
+
+.video-title {
+	color: #fff;
+	font-size: 20px;
+	margin: 5px;
+}
+
+.tags {
+	color: #2070e9;
+}
+
+.views {
+	margin-top: 2px;
+	color: #909090;
+	display: inline-block;
+}
+
+.main-video-buttons {
+	float: right;
+	width: 500px;
+	color: #909090;
+}
+
+.main-video-icons {
+	margin: 6px;
+}
+.icons-text {
+	font-size: 16px;
+	font-weight: 500;
+	position: relative;
+	top: -5px;
+}
+
+.main-video-buttons .material-icons,
+.main-video-buttons .material-icons-outlined {
+	font-size: 25px;
+}
+
+.author-img {
+	border-radius: 50%;
+	display: inline-block;
+}
+.author-link {
+	text-decoration: none;
+	color: white;
+}
+.author-link h3 {
+	display: inline-block;
+}
+
+/*---------------- aside video --------------*/
+aside {
+	margin-top: 25px;
+}
+
+.video-card {
+	margin: 5px 0;
+	width: 370px;
+	height: 90px;
+}
+.aside-video {
+	width: 160px;
+	height: 90px;
+	float: left;
+}
+
+.aside-video-link {
+	width: 200px;
+	height: 90px;
+	float: right;
+}
+
+.aside-video-title {
+	color: white;
+	word-wrap: break-word;
+}
+
+.aside-video-channel,
+.aside-video-views {
+	color: #909090;
+	font-size: small;
 }
